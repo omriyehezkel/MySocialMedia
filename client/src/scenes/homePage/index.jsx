@@ -26,7 +26,7 @@ const HomePage = () => {
         <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
           <UserWidget userId={_id} picturePath={picturePath} />
         </Box>
-        <Box
+        <Box m="2rem 0"
           flexBasis={isNonMobileScreens ? "42%" : undefined}
           mt={isNonMobileScreens ? undefined : "2rem"}
         >
@@ -34,7 +34,7 @@ const HomePage = () => {
           <PostsWidget userId={_id} />
         </Box>
         {isNonMobileScreens && (
-          <Box flexBasis="26%">
+          <Box  flexBasis="26%">
             <WeatherWidget countryCode={location}  apiKey="dbb84ac415ca224f34f5d2d28920d0e8"
  />
             <AdvertWidget />
