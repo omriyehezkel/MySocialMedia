@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, useMediaQuery } from "@mui/material";
 import { useSelector } from "react-redux";
 import Navbar from "scenes/navbar";
@@ -6,10 +7,11 @@ import MyPostWidget from "scenes/widgets/MyPostWidget";
 import PostsWidget from "scenes/widgets/PostsWidget";
 import AdvertWidget from "scenes/widgets/AdvertWidget";
 import FriendListWidget from "scenes/widgets/FriendListWidget";
+import WeatherWidget from "scenes/widgets/WeatherWidget";
 
 const HomePage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
-  const { _id, picturePath } = useSelector((state) => state.user);
+  const { _id, picturePath, location } = useSelector((state) => state.user);
 
   return (
     <Box>
@@ -33,6 +35,8 @@ const HomePage = () => {
         </Box>
         {isNonMobileScreens && (
           <Box flexBasis="26%">
+            <WeatherWidget countryCode={location}  apiKey="dbb84ac415ca224f34f5d2d28920d0e8"
+ />
             <AdvertWidget />
             <Box m="2rem 0" />
             <FriendListWidget userId={_id} />
