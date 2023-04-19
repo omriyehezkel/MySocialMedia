@@ -79,7 +79,7 @@ npm start
 ## Future Improvements
 •	Implement real-time messaging between friends
 
-•	Improve search functionality for finding friends
+•	Add search functionality for finding friends
 
-•	Add more weather information such as forecast and weather alerts
+•	Add more weather information 
 
