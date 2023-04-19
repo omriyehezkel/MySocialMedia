@@ -83,3 +83,5 @@ npm start
 
 •	Add more weather information 
 
+
+![image](https://user-images.githubusercontent.com/40993248/233186645-867e2acb-b528-4c45-8382-bf2fa562159e.png)
